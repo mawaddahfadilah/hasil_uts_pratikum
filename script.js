@@ -241,4 +241,3 @@ function clearErrors() {
 
   document.getElementById('successMsg').style.display = 'none';
 }
-
