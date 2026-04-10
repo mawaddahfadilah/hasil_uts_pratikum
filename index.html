@@ -385,188 +385,222 @@
   </div>
 </div>
 </div>
-      <!-- SECTION: BOOKING FORM -->
-      <section id="booking" class="booking-section">
-        <div class="section-header light">
-          <p class="section-tag">— Reservasi Paket Wisata —</p>
-          <h2 class="section-title white">
-            Form
-            <span class="highlight-light">Pemesanan</span>
-          </h2>
-          <p class="section-desc light-text">
-            Isi formulir di bawah ini dan tim kami akan segera menghubungi Anda dalam 1x24 jam.
-          </p>
+   <!-- SECTION: BOOKING FORM -->
+<section id="booking" class="booking-section">
+  <div class="section-header light">
+    <p class="section-tag">— Reservasi Paket Wisata —</p>
+    <h2 class="section-title white">
+      Form <span class="highlight-light">Pemesanan</span>
+    </h2>
+    <p class="section-desc light-text">
+      Isi formulir di bawah ini dan tim kami akan segera menghubungi Anda dalam 1x24 jam.
+    </p>
+  </div>
+
+  <div class="form-wrapper">
+    <form id="bookingForm">
+
+      <div class="form-grid">
+
+        <!-- Nama -->
+        <div class="form-group">
+          <label for="namaLengkap">
+            Nama Lengkap <span class="req">*</span>
+          </label>
+          <input
+            type="text"
+            id="namaLengkap"
+            name="namaLengkap"
+            placeholder="Masukkan nama lengkap Anda"
+            required
+            minlength="3"
+          />
         </div>
-        <div class="form-wrapper">
-          <form id="bookingForm" novalidate>
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="namaLengkap">
-                  Nama Lengkap
-                  <span class="req">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="namaLengkap"
-                  name="namaLengkap"
-                  placeholder="Masukkan nama lengkap Anda"
-                />
-                <span class="error-msg" id="err-nama"></span>
-              </div>
-              <div class="form-group">
-                <label for="email">
-                  Alamat Email
-                  <span class="req">*</span>
-                </label>
-                <input type="email" id="email" name="email" placeholder="contoh@email.com" />
-                <span class="error-msg" id="err-email"></span>
-              </div>
-              <div class="form-group">
-                <label for="password">
-                  Buat Password Akun
-                  <span class="req">*</span>
-                </label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Minimal 8 karakter"
-                />
-                <span class="error-msg" id="err-password"></span>
-              </div>
-              <div class="form-group">
-                <label for="telepon">
-                  No. Telepon
-                  <span class="req">*</span>
-                </label>
-                <input type="number" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" />
-                <span class="error-msg" id="err-telepon"></span>
-              </div>
-              <div class="form-group">
-                <label for="paket">
-                  Pilih Paket Wisata
-                  <span class="req">*</span>
-                </label>
-                <select id="paket" name="paket">
-                  <option value="">-- Pilih Paket --</option>
-                  <option value="bali">Bali Paradise Escape - Rp 8.500.000</option>
-                  <option value="paris">Paris & London Grand Tour - Rp 24.900.000</option>
-                  <option value="japan">Japan Cherry Blossom - Rp 18.750.000</option>
-                  <option value="dubai">Dubai & Abu Dhabi Luxury - Rp 15.200.000</option>
-                  <option value="santorini">Santorini & Athens - Rp 22.500.000</option>
-                  <option value="newyork">New York City Adventure - Rp 32.000.000</option>
-                  <option value="sydney">Sydney & Great Barrier Reef - Rp 28.750.000</option>
-                  <option value="india">India Taj Mahal & Rajasthan - Rp 14.500.000</option>
-                  <option value="maroko">Maroko Sahara & Medina - Rp 16.800.000</option>
-                  <option value="turki">Istanbul & Cappadocia - Rp 17.900.000</option>
-                  <option value="swiss">Swiss Alps & Zurich - Rp 35.000.000</option>
-                  <option value="maldives">Maldives Overwater Villa - Rp 29.500.000</option>
-                </select>
-                <span class="error-msg" id="err-paket"></span>
-              </div>
-              <div class="form-group">
-                <label for="budget">
-                  Budget Maksimal (Rp)
-                  <span class="req">*</span>
-                </label>
-                <input
-                  type="number"
-                  id="budget"
-                  name="budget"
-                  placeholder="Contoh: 20000000"
-                  min="1"
-                />
-                <span class="error-msg" id="err-budget"></span>
-              </div>
-              <div class="form-group">
-                <label for="tanggal">
-                  Tanggal Keberangkatan
-                  <span class="req">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="tanggal"
-                  name="tanggal"
-                  placeholder="DD/MM/YYYY"
-                  onfocus="this.type = 'date'"
-                  onblur="if (!this.value) this.type = 'text';"
-                />
-                <span class="error-msg" id="err-tanggal"></span>
-              </div>
-              <div class="form-group">
-                <label for="peserta">
-                  Jumlah Peserta
-                  <span class="req">*</span>
-                </label>
-                <input type="number" id="peserta" name="peserta" placeholder="Contoh: 2" min="1" />
-                <span class="error-msg" id="err-peserta"></span>
-              </div>
-            </div>
 
-            <div class="form-group full-width">
-              <label>
-                Jenis Kamar Hotel
-                <span class="req">*</span>
-              </label>
-              <div class="radio-group">
-                <label class="radio-label">
-                  <input type="radio" name="kamar" value="standard" />
-                  Standard Room
-                </label>
-                <label class="radio-label">
-                  <input type="radio" name="kamar" value="deluxe" />
-                  Deluxe Room
-                </label>
-                <label class="radio-label">
-                  <input type="radio" name="kamar" value="suite" />
-                  Suite Room
-                </label>
-              </div>
-              <span class="error-msg" id="err-kamar"></span>
-            </div>
-
-            <div class="form-group full-width">
-              <label>Layanan Tambahan</label>
-              <div class="checkbox-group">
-                <label class="checkbox-label">
-                  <input type="checkbox" name="layanan" value="airport" />
-                  Antar Jemput Bandara
-                </label>
-                <label class="checkbox-label">
-                  <input type="checkbox" name="layanan" value="asuransi" />
-                  Asuransi Perjalanan
-                </label>
-                <label class="checkbox-label">
-                  <input type="checkbox" name="layanan" value="guide" />
-                  Tour Guide Pribadi
-                </label>
-                <label class="checkbox-label">
-                  <input type="checkbox" name="layanan" value="fotografi" />
-                  Paket Fotografi
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group full-width">
-              <label for="catatan">Permintaan Khusus / Catatan</label>
-              <textarea
-                id="catatan"
-                name="catatan"
-                rows="3"
-                placeholder="Tuliskan permintaan khusus Anda di sini..."
-              ></textarea>
-            </div>
-
-            <div class="form-submit">
-              <button type="submit" class="btn-submit"><span>✈ Kirim Pemesanan</span></button>
-            </div>
-            <div id="successMsg" class="success-msg" style="display: none">
-              ✅ Pemesanan berhasil dikirim! Tim kami akan menghubungi Anda segera.
-            </div>
-          </form>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">
+            Alamat Email <span class="req">*</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="contoh@email.com"
+            required
+          />
         </div>
-      </section>
 
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">
+            Buat Password Akun <span class="req">*</span>
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Minimal 8 karakter"
+            required
+            minlength="8"
+          />
+        </div>
+
+        <!-- Telepon -->
+        <div class="form-group">
+          <label for="telepon">
+            No. Telepon <span class="req">*</span>
+          </label>
+          <input
+            type="tel"
+            id="telepon"
+            name="telepon"
+            placeholder="08xxxxxxxxxx"
+            required
+            pattern="[0-9]{10,15}"
+          />
+        </div>
+
+        <!-- Paket -->
+        <div class="form-group">
+          <label for="paket">
+            Pilih Paket Wisata <span class="req">*</span>
+          </label>
+          <select id="paket" name="paket" required>
+            <option value="">-- Pilih Paket --</option>
+            <option value="bali">Bali Paradise Escape - Rp 8.500.000</option>
+            <option value="paris">Paris & London Grand Tour - Rp 24.900.000</option>
+            <option value="japan">Japan Cherry Blossom - Rp 18.750.000</option>
+            <option value="dubai">Dubai & Abu Dhabi Luxury - Rp 15.200.000</option>
+            <option value="santorini">Santorini & Athens - Rp 22.500.000</option>
+            <option value="newyork">New York City Adventure - Rp 32.000.000</option>
+            <option value="sydney">Sydney & Great Barrier Reef - Rp 28.750.000</option>
+            <option value="india">India Taj Mahal & Rajasthan - Rp 14.500.000</option>
+            <option value="maroko">Maroko Sahara & Medina - Rp 16.800.000</option>
+            <option value="turki">Istanbul & Cappadocia - Rp 17.900.000</option>
+            <option value="swiss">Swiss Alps & Zurich - Rp 35.000.000</option>
+            <option value="maldives">Maldives Overwater Villa - Rp 29.500.000</option>
+          </select>
+        </div>
+
+        <!-- Budget -->
+        <div class="form-group">
+          <label for="budget">
+            Budget Maksimal (Rp) <span class="req">*</span>
+          </label>
+          <input
+            type="number"
+            id="budget"
+            name="budget"
+            placeholder="Contoh: 20000000"
+            required
+            min="1000000"
+          />
+        </div>
+
+        <!-- Tanggal -->
+        <div class="form-group">
+          <label for="tanggal">
+            Tanggal Keberangkatan <span class="req">*</span>
+          </label>
+          <input
+            type="date"
+            id="tanggal"
+            name="tanggal"
+            required
+          />
+        </div>
+
+        <!-- Peserta -->
+        <div class="form-group">
+          <label for="peserta">
+            Jumlah Peserta <span class="req">*</span>
+          </label>
+          <input
+            type="number"
+            id="peserta"
+            name="peserta"
+            required
+            min="1"
+            max="20"
+          />
+        </div>
+
+      </div>
+
+      <!-- Jenis Kamar -->
+      <div class="form-group full-width">
+        <label>
+          Jenis Kamar Hotel <span class="req">*</span>
+        </label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="kamar" value="standard" required />
+            Standard Room
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="kamar" value="deluxe" />
+            Deluxe Room
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="kamar" value="suite" />
+            Suite Room
+          </label>
+        </div>
+      </div>
+
+      <!-- Layanan -->
+      <div class="form-group full-width">
+        <label>Layanan Tambahan</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="layanan" value="airport" />
+            Antar Jemput Bandara
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="layanan" value="asuransi" />
+            Asuransi Perjalanan
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="layanan" value="guide" />
+            Tour Guide Pribadi
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="layanan" value="fotografi" />
+            Paket Fotografi
+          </label>
+        </div>
+      </div>
+
+      <!-- Catatan -->
+      <div class="form-group full-width">
+        <label for="catatan">Permintaan Khusus / Catatan</label>
+        <textarea
+          id="catatan"
+          name="catatan"
+          rows="3"
+          placeholder="Tuliskan permintaan khusus Anda di sini..."
+        ></textarea>
+      </div>
+
+      <!-- Persetujuan -->
+      <div class="form-group full-width">
+        <label>
+          <input type="checkbox" name="setuju" required />
+          Saya menyetujui syarat dan ketentuan
+        </label>
+      </div>
+
+      <!-- Submit -->
+      <div class="form-submit">
+        <button type="submit" class="btn-submit">
+          <span>✈ Kirim Pemesanan</span>
+        </button>
+      </div>
+
+    </form>
+  </div>
+</section>
       <!-- SECTION: ARTIKEL DOM (Soal 5) -->
       <section id="artikel" class="artikel-section">
         <div class="section-header">
