@@ -416,8 +416,8 @@ nav ul {
   align-items: center;
   justify-content: center;
   font-size: 4rem;
-  position: relative; /* ← tambah ini */
-  overflow: hidden; /* ← tambah ini */
+  position: relative;
+  overflow: hidden;
 }
 
 .card-img img {
@@ -425,9 +425,9 @@ nav ul {
   height: 100%;
   object-fit: cover;
   display: block;
-  position: absolute; /* ← tambah ini */
-  top: 0; /* ← tambah ini */
-  left: 0; /* ← tambah ini */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .card-badge {
@@ -964,6 +964,17 @@ footer h4 {
   .tour-card {
     max-width: 100%;
     width: 100%;
+  }
+
+  /* Card footer di mobile */
+  .card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .btn-card {
+    width: 100%;
+    text-align: center;
   }
 
   /* Form */
