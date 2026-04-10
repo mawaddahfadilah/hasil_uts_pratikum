@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripdreamTravel Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header id="top">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-icon">✈</span>
+          <div>
+            <span class="logo-main">Tripdream</span>
+            <span class="logo-sub">Travel Agency</span>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#pilihan-tour" class="nav-link">Pilihan Tour</a></li>
+            <li><a href="#booking" class="nav-link">Booking</a></li>
+            <li><a href="#artikel" class="nav-link">Artikel</a></li>
+          </ul>
+        </nav>
+        <button
+          class="btn-cta"
+          onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })"
+        >
+          Pesan Sekarang
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">✦ Jelajahi Dunia Bersama Kami</p>
+          <h1 class="hero-title">
+            Temukan
+            <span class="highlight">Keajaiban</span>
+            <br />
+            di Setiap Perjalanan
+          </h1>
+          <p class="hero-desc">
+            Kami mewujudkan impian perjalananmu ke destinasi terbaik dunia dengan paket wisata
+            eksklusif dan pelayanan kelas satu.
+          </p>
+          <div class="hero-btns">
+            <button
+              class="btn-primary"
+              onclick="
+                document.getElementById('pilihan-tour').scrollIntoView({ behavior: 'smooth' })
+              "
+            >
+              Lihat Paket Tour
+            </button>
+            <button
+              class="btn-outline"
+              onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })"
+            >
+              Booking Sekarang
+            </button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">500+</span>
+              <span class="stat-label">Destinasi</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">12K+</span>
+              <span class="stat-label">Pelanggan</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">98%</span>
+              <span class="stat-label">Kepuasan</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="card-float card1">
+            🗺️
+            <br />
+            <small>Peta Destinasi</small>
+          </div>
+          <div class="card-float card2">
+            ⭐ 4.9
+            <br />
+            <small>Rating Terbaik</small>
+          </div>
+          <div class="hero-globe">🌍</div>
+        </div>
+      </section>
+
+      <!-- =============================================
+      SECTION: PILIHAN TOUR —DESTINASI
+============================================= -->
+      <section id="pilihan-tour" class="tour-section">
+        <div class="section-header">
+          <p class="section-tag">— Paket Wisata Unggulan —</p>
+          <h2 class="section-title">
+            Pilihan Tour
+            <span class="highlight">Terbaik</span>
+          </h2>
+          <p class="section-desc">
+            Temukan paket perjalanan impianmu dari koleksi destinasi eksotis kami yang telah dipilih
+            dengan cermat.
+          </p>
+        </div>
+
+        <div class="cards-container">
+          
+
+  <!-- BALI -->
+<div class="tour-card" data-region="asia-tenggara">
+  <div class="card-img">
+    <img src="bali.jpeg" alt="Bali" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🏝️</div>
+  </div>
+  <div class="card-badge badge-gold">Best Seller</div>
+  <div class="card-body">
+    <div class="card-tag">Asia Tenggara</div>
+    <h3>Bali Paradise Escape</h3>
+    <p>Pantai eksotis, sawah bertingkat, dan pura sakral dalam harmoni alam Bali.</p>
+    <div class="card-info">
+      <span>🕐 7 Hari / 6 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 8.500.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+
+<!-- PARIS & LONDON -->
+<div class="tour-card featured" data-region="eropa">
+  <div class="card-img">
+    <img src="london.jpeg" alt="Paris" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🗼</div>
+  </div>
+  <div class="card-badge badge-blue">Popular</div>
+  <div class="card-body">
+    <div class="card-tag">Eropa</div>
+    <h3>Paris & London Grand Tour</h3>
+    <p>Dua kota ikonik Eropa — romantisme Paris dan kemegahan London dalam satu trip.</p>
+    <div class="card-info">
+      <span>🕐 10 Hari / 9 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 24.900.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+
+<!-- JEPANG -->
+<div class="tour-card" data-region="asia-timur">
+  <div class="card-img">
+    <img src="jepang.jpeg" alt="Jepang" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🌸</div>
+  </div>
+  <div class="card-badge badge-green">New</div>
+  <div class="card-body">
+    <div class="card-tag">Asia Timur</div>
+    <h3>Japan Cherry Blossom</h3>
+    <p>Sakura bermekaran di Tokyo, Kyoto, dan Osaka — Jepang di musim terbaiknya.</p>
+    <div class="card-info">
+      <span>🕐 8 Hari / 7 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 18.750.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+
+<!-- SINGAPORE -->
+<div class="tour-card" data-region="asia-tenggara">
+  <div class="card-img">
+    <img src="singapur.jpeg" alt="Singapore" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🏙️</div>
+  </div>
+  <div class="card-badge badge-red">Promo</div>
+  <div class="card-body">
+    <div class="card-tag">Asia Tenggara</div>
+    <h3>Singapore City Tour</h3>
+    <p>Marina Bay, Gardens by the Bay, dan kuliner kelas dunia di kota singa.</p>
+    <div class="card-info">
+      <span>🕐 4 Hari / 3 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 9.900.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+
+<!-- KOREA -->
+<div class="tour-card" data-region="asia-timur">
+  <div class="card-img">
+    <img src="korea.jpeg" alt="Korea" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🇰🇷</div>
+  </div>
+  <div class="card-badge badge-gold">Hot</div>
+  <div class="card-body">
+    <div class="card-tag">Asia Timur</div>
+    <h3>Korea Selatan Tour</h3>
+    <p>Seoul yang modern, istana bersejarah, budaya K-pop, dan kuliner khas Korea.</p>
+    <div class="card-info">
+      <span>🕐 7 Hari / 6 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 16.500.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+
+<!-- NEW YORK -->
+<div class="tour-card" data-region="amerika">
+  <div class="card-img">
+    <img src="newyork.jpeg" alt="New York" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🗽</div>
+  </div>
+  <div class="card-badge badge-blue">Eksklusif</div>
+  <div class="card-body">
+    <div class="card-tag">Amerika</div>
+    <h3>New York City Adventure</h3>
+    <p>Times Square, Central Park, Patung Liberty — jantung kota terbesar dunia.</p>
+    <div class="card-info">
+      <span>🕐 8 Hari / 7 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 32.000.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+
+<!-- TURKI -->
+<div class="tour-card" data-region="timur-tengah">
+  <div class="card-img">
+    <img src="istanbul.jpeg" alt="Turki" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🕌</div>
+  </div>
+  <div class="card-badge badge-gold">Terlaris</div>
+  <div class="card-body">
+    <div class="card-tag">Timur Tengah</div>
+    <h3>Istanbul & Cappadocia</h3>
+    <p>Balon udara di Cappadocia, masjid megah di Istanbul, dan keajaiban dua benua.</p>
+    <div class="card-info">
+      <span>🕐 7 Hari / 6 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 17.900.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+<!-- INDIA -->
+<div class="tour-card" data-region="asia-selatan">
+  <div class="card-img">
+    <img src="tajmahal.jpeg" alt="India" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🕌</div>
+  </div>
+  <div class="card-badge badge-green">New</div>
+  <div class="card-body">
+    <div class="card-tag">Asia Selatan</div>
+    <h3>India Taj Mahal & Rajasthan</h3>
+    <p>Taj Mahal, istana Rajasthan, dan warna-warni budaya India yang memukau.</p>
+    <div class="card-info">
+      <span>🕐 9 Hari / 8 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 14.500.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+
+<!-- ITALIA -->
+<div class="tour-card" data-region="eropa">
+  <div class="card-img">
+    <img src="italy.jpeg" alt="Italia" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🇮🇹</div>
+  </div>
+  <div class="card-badge badge-red">Promo</div>
+  <div class="card-body">
+    <div class="card-tag">Eropa</div>
+    <h3>Italy Rome & Venice</h3>
+    <p>Colosseum Roma, kanal Venezia, dan cita rasa Italia yang autentik.</p>
+    <div class="card-info">
+      <span>🕐 9 Hari / 8 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 23.000.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+
+<!-- BANGKOK -->
+<div class="tour-card" data-region="asia-tenggara">
+  <div class="card-img">
+    <img src="bangkok.jpeg" alt="Bangkok" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🇹🇭</div>
+  </div>
+  <div class="card-badge badge-blue">Popular</div>
+  <div class="card-body">
+    <div class="card-tag">Asia Tenggara</div>
+    <h3>Bangkok City Tour</h3>
+    <p>Kuil megah, street food legendaris, dan pasar malam Bangkok yang hidup.</p>
+    <div class="card-info">
+      <span>🕐 4 Hari / 3 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 7.900.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+
+<!-- SWISS -->
+<div class="tour-card" data-region="eropa">
+  <div class="card-img">
+    <img src="swiss.jpeg" alt="Swiss" onerror="this.style.display='none'"/>
+    <div class="img-placeholder">🏔️</div>
+  </div>
+  <div class="card-badge badge-gold">Hot</div>
+  <div class="card-body">
+    <div class="card-tag">Eropa</div>
+    <h3>Swiss Alps & Zurich</h3>
+    <p>Pegunungan Alpen yang dramatis, danau biru jernih, dan kota Zurich yang elegan.</p>
+    <div class="card-info">
+      <span>🕐 9 Hari / 8 Malam</span>
+    </div>
+    <div class="card-footer">
+      <div class="price">
+        <span class="price-from">Mulai dari</span>
+        <span class="price-num">Rp 35.000.000 <span class="price-per">/ orang</span></span>
+      </div>
+      <button class="btn-card">Pesan</button>
+    </div>
+  </div>
+</div>
+</div>
+      <!-- SECTION: BOOKING FORM -->
+      <section id="booking" class="booking-section">
+        <div class="section-header light">
+          <p class="section-tag">— Reservasi Paket Wisata —</p>
+          <h2 class="section-title white">
+            Form
+            <span class="highlight-light">Pemesanan</span>
+          </h2>
+          <p class="section-desc light-text">
+            Isi formulir di bawah ini dan tim kami akan segera menghubungi Anda dalam 1x24 jam.
+          </p>
+        </div>
+        <div class="form-wrapper">
+          <form id="bookingForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="namaLengkap">
+                  Nama Lengkap
+                  <span class="req">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="namaLengkap"
+                  name="namaLengkap"
+                  placeholder="Masukkan nama lengkap Anda"
+                />
+                <span class="error-msg" id="err-nama"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">
+                  Alamat Email
+                  <span class="req">*</span>
+                </label>
+                <input type="email" id="email" name="email" placeholder="contoh@email.com" />
+                <span class="error-msg" id="err-email"></span>
+              </div>
+              <div class="form-group">
+                <label for="password">
+                  Buat Password Akun
+                  <span class="req">*</span>
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Minimal 8 karakter"
+                />
+                <span class="error-msg" id="err-password"></span>
+              </div>
+              <div class="form-group">
+                <label for="telepon">
+                  No. Telepon
+                  <span class="req">*</span>
+                </label>
+                <input type="number" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" />
+                <span class="error-msg" id="err-telepon"></span>
+              </div>
+              <div class="form-group">
+                <label for="paket">
+                  Pilih Paket Wisata
+                  <span class="req">*</span>
+                </label>
+                <select id="paket" name="paket">
+                  <option value="">-- Pilih Paket --</option>
+                  <option value="bali">Bali Paradise Escape - Rp 8.500.000</option>
+                  <option value="paris">Paris & London Grand Tour - Rp 24.900.000</option>
+                  <option value="japan">Japan Cherry Blossom - Rp 18.750.000</option>
+                  <option value="dubai">Dubai & Abu Dhabi Luxury - Rp 15.200.000</option>
+                  <option value="santorini">Santorini & Athens - Rp 22.500.000</option>
+                  <option value="newyork">New York City Adventure - Rp 32.000.000</option>
+                  <option value="sydney">Sydney & Great Barrier Reef - Rp 28.750.000</option>
+                  <option value="india">India Taj Mahal & Rajasthan - Rp 14.500.000</option>
+                  <option value="maroko">Maroko Sahara & Medina - Rp 16.800.000</option>
+                  <option value="turki">Istanbul & Cappadocia - Rp 17.900.000</option>
+                  <option value="swiss">Swiss Alps & Zurich - Rp 35.000.000</option>
+                  <option value="maldives">Maldives Overwater Villa - Rp 29.500.000</option>
+                </select>
+                <span class="error-msg" id="err-paket"></span>
+              </div>
+              <div class="form-group">
+                <label for="budget">
+                  Budget Maksimal (Rp)
+                  <span class="req">*</span>
+                </label>
+                <input
+                  type="number"
+                  id="budget"
+                  name="budget"
+                  placeholder="Contoh: 20000000"
+                  min="1"
+                />
+                <span class="error-msg" id="err-budget"></span>
+              </div>
+              <div class="form-group">
+                <label for="tanggal">
+                  Tanggal Keberangkatan
+                  <span class="req">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="tanggal"
+                  name="tanggal"
+                  placeholder="DD/MM/YYYY"
+                  onfocus="this.type = 'date'"
+                  onblur="if (!this.value) this.type = 'text';"
+                />
+                <span class="error-msg" id="err-tanggal"></span>
+              </div>
+              <div class="form-group">
+                <label for="peserta">
+                  Jumlah Peserta
+                  <span class="req">*</span>
+                </label>
+                <input type="number" id="peserta" name="peserta" placeholder="Contoh: 2" min="1" />
+                <span class="error-msg" id="err-peserta"></span>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label>
+                Jenis Kamar Hotel
+                <span class="req">*</span>
+              </label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="kamar" value="standard" />
+                  Standard Room
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="kamar" value="deluxe" />
+                  Deluxe Room
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="kamar" value="suite" />
+                  Suite Room
+                </label>
+              </div>
+              <span class="error-msg" id="err-kamar"></span>
+            </div>
+
+            <div class="form-group full-width">
+              <label>Layanan Tambahan</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="layanan" value="airport" />
+                  Antar Jemput Bandara
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="layanan" value="asuransi" />
+                  Asuransi Perjalanan
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="layanan" value="guide" />
+                  Tour Guide Pribadi
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="layanan" value="fotografi" />
+                  Paket Fotografi
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="catatan">Permintaan Khusus / Catatan</label>
+              <textarea
+                id="catatan"
+                name="catatan"
+                rows="3"
+                placeholder="Tuliskan permintaan khusus Anda di sini..."
+              ></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn-submit"><span>✈ Kirim Pemesanan</span></button>
+            </div>
+            <div id="successMsg" class="success-msg" style="display: none">
+              ✅ Pemesanan berhasil dikirim! Tim kami akan menghubungi Anda segera.
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- SECTION: ARTIKEL DOM (Soal 5) -->
+      <section id="artikel" class="artikel-section">
+        <div class="section-header">
+          <p class="section-tag">— Tips & Inspirasi —</p>
+          <h2 class="section-title">
+            Daftar Artikel
+            <span class="highlight">Travel</span>
+          </h2>
+          <p class="section-desc">
+            Baca artikel inspiratif seputar perjalanan wisata dari seluruh penjuru dunia.
+          </p>
+        </div>
+
+        <div class="artikel-wrapper">
+          <div class="artikel-add-area">
+            <div class="add-form">
+              <input type="text" id="inputArtikel" placeholder="Judul artikel baru..." />
+              <button class="btn-tambah" id="btnTambah" onclick="tambahArtikel()">+ Tambah</button>
+            </div>
+            <span class="error-msg" id="err-artikel"></span>
+          </div>
+
+          <div id="artikelList" class="artikel-list">
+            <!-- Diisi oleh JavaScript -->
+          </div>
+
+          <div id="emptyMsg" class="empty-msg" style="display: none">
+            📭 Belum ada artikel. Tambahkan artikel pertamamu!
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">✈</span>
+            <div>
+              <span class="logo-main">SkyJourney</span>
+              <span class="logo-sub">Travel Agency</span>
+            </div>
+          </div>
+          <p>
+            Wujudkan impian perjalananmu bersama kami. Kami hadir untuk memberikan pengalaman wisata
+            terbaik dan tak terlupakan.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pilihan-tour">Pilihan Tour</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#artikel">Artikel</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Hubungi Kami</h4>
+          <p>📧 info Mawaddah fadilah66@gmail.com</p>
+          <p>📞 +62 812-6079-2993</p>
+          <p>📍 Jl.halat </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SkyJourney Travel Agency. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
