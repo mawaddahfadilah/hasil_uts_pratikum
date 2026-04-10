@@ -1036,3 +1036,38 @@ footer h4 {
   }
 
 }
+/* PUNYA KAMU (BIARIN) */
+@media (max-width: 768px) {
+
+  .card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price {
+    display: block !important;
+    width: 100%;
+  }
+
+  .price-num {
+    display: block !important;
+  }
+
+  .btn-card {
+    width: 100%;
+  }
+
+}
+
+/* TAMBAHAN WAJIB (INI YANG BENERIN MASALAH) */
+@media (max-width: 768px) {
+
+  .tour-card {
+    overflow: visible !important;
+  }
+
+  .card-body {
+    overflow: visible !important;
+  }
+
+}
