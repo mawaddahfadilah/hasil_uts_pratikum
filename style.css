@@ -913,69 +913,43 @@ footer h4 {
   font-size: 0.82rem;
 }
 
-/* ========================================
-   FIX BIAR RAPI DI HP (WAJIB PALING BAWAH)
-   ======================================== */
-
-body {
-  background: #eaeaea;
-}
-
-/* Biar jadi tampilan HP di tengah */
-header,
-.hero-section,
-.tour-section,
-.booking-section,
-.artikel-section,
-footer {
-  max-width: 375px;
-  margin: 0 auto;
-}
-
-/* Header */
-header {
-  position: sticky;
-  top: 0;
-}
-
-.header-inner {
-  padding: 0 1rem;
-}
-
-/* Card jadi vertikal */
-.cards-container {
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.tour-card {
-  width: 100%;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-/* Isi card */
-.card-body {
-  padding: 1rem;
-}
-
-.card-body h3 {
-  font-size: 1.1rem;
-}
-
-.card-body p {
-  font-size: 0.85rem;
-}
-
-/* Responsive */
+/* ===== FIX MOBILE BIAR RAPI ===== */
 @media (max-width: 768px) {
-  nav {
-    display: none;
+  
+  /* Container biar center */
+  .cards-container {
+    padding: 0 1rem;
   }
 
-  .hero-section {
-    flex-direction: column;
-    padding: 5rem 1rem 2rem;
+  /* Card full & rapi */
+  .tour-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 18px;
   }
-}
+
+  /* Gambar biar proporsional */
+  .card-img {
+    height: 180px;
+  }
+
+  .card-img img {
+    object-fit: cover;
+  }
+
+  /* Badge biar ga kepotong */
+  .card-badge {
+    top: 10px;
+    right: 10px;
+    font-size: 0.65rem;
+    padding: 4px 10px;
+  }
+
+  /* Body lebih rapi */
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-body h3 {
+    font-size: 1rem
